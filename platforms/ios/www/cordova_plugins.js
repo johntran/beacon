@@ -42,6 +42,20 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
+    },
+    {
+        "file": "plugins/com.modo.modokit/www/modo.js",
+        "id": "com.modo.modokit.modo",
+        "clobbers": [
+            "plugins.ModoPlugin"
+        ]
+    },
+    {
+        "file": "plugins/com.modo.modokit/www/modoBeacon.js",
+        "id": "com.modo.modokit.modoBeacon",
+        "clobbers": [
+            "plugins.ModoBeaconPlugin"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -52,7 +66,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "2.1.0",
     "cordova-plugin-statusbar": "1.0.1",
     "cordova-plugin-whitelist": "1.0.0",
-    "ionic-plugin-keyboard": "1.0.7"
+    "ionic-plugin-keyboard": "1.0.7",
+    "com.modo.modokit": "1.0.0"
 }
 // BOTTOM OF METADATA
 });

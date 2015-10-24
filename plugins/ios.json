@@ -69,6 +69,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.beacon978320"
+        },
+        "modo-plugin": {
+            "PACKAGE_NAME": "com.ionicframework.beacon978320"
         }
     },
     "dependent_plugins": {}

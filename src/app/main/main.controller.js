@@ -1,7 +1,7 @@
 export class MainController {
   constructor ($timeout, webDevTec, toastr) {
     'ngInject';
-
+    let Modo = new ModoBeaconPlugin();
     this.awesomeThings = [];
     this.classAnimation = '';
     this.creationDate = 1445721867634;
