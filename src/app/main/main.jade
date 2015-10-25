@@ -18,14 +18,17 @@ html
             div(class='col product-stock')
               | In Stock
                 
+        div(ng-show="showBarcode")
+          h3(class='u-textcenter')
+            | Scan below to purchase
+        div(class='card barcode' ng-show="showBarcode")
         
-        div(class='card barcode' ng-show:'barcode-active')
-        
-        a(ng-click:'console.log('hi')', ng-hide:'barcode-active')    
-          button(class='button button-positive buy-button')
+        a(ng-hide="showBarcode")
+          button(class='button button-positive buy-button' ng-click="showBarcode = !showBarcode")
             | Buy Now
+            | {{ showBarcode }}
         
-        div(class='card' ng-hide:'barcode-active')
+        div(class='card' ng-hide='showBarcode')
           div(class='row')
             div(class='col-40')
               img(src='../assets/images/starcraft.png' class='main-page-like')
