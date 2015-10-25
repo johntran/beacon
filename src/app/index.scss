@@ -131,16 +131,18 @@ ion-content {
   background-color: #EEEEEE;
 }
 
+.product-price, .product-stock {
+  margin: 15px 10px;
+}
+
 .product-price {
   font-weight: bold;
   font-size: 30px;
-  margin-top: 15px;
 }
 
 .product-stock {
   color: #7ED321;
-  margin-top: 10px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -210,6 +212,10 @@ ion-content {
 
 .payment {
   margin: 0px;
+}
+
+.buy-button {
+  width: 100%;
 }
 
 /**
