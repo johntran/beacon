@@ -13,17 +13,11 @@ export function routerConfig ($stateProvider, $urlRouterProvider) {
       controller: 'ProductPageController as ProductPage',
       controllerAs: 'productPage'
     })
-    .state('checkout', {
-      url: '/checkout',
-      templateUrl: 'app/checkout/checkout.html',
-      controller: 'CheckoutController as Checkout',
-      controllerAs: 'checkout'
-    })
-    .state('checkout-copy', {
-      url: '/checkout-copy',
-      templateUrl: 'app/checkout-copy/checkout-copy.html',
-      controller: 'CheckoutCopyController as CheckoutCopy',
-      controllerAs: 'checkoutCopy'
+    .state('dashboard', {
+      url: '/dashboard',
+      templateUrl: 'app/dashboard/dashboard.html',
+      controller: 'DashboardController as Dashboard',
+      controllerAs: 'dashboard'
     })
     .state('offer-page', {
       url: '/offer-page',

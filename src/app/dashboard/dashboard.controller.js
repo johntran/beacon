@@ -3,7 +3,7 @@
 // import {Modo} from '../../../plugins/com-modo-modokit/www/modoBeacon.js';
 
 
-export class CheckoutController {
+export class DashboardController {
   constructor ($timeout, webDevTec, toastr, $ionicPlatform, $cordovaBeacon) {
     'ngInject';
     this.awesomeThings = [];
@@ -19,7 +19,7 @@ export class CheckoutController {
     // this.getUUID();
     this.beacons = {};
     this.largeResponse = 'we';
-    console.log('in checkout');
+    console.log('in dashboard');
     $ionicPlatform.ready(function() {
 
         $cordovaBeacon.requestWhenInUseAuthorization();
