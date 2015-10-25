@@ -38,7 +38,14 @@ function browserSyncInit(baseDir, browser) {
   browserSync.instance = browserSync.init({
     startPath: '/',
     server: server,
-    browser: browser
+    browser: browser,
+    ghostMode: false,
+   //add rule in order to disable browsersync
+   snippetOptions: {
+     rule: {
+       match: /qqqqqqqqq/
+     }
+   }
   });
 }
 
