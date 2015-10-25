@@ -12,7 +12,7 @@ import { ngCordovaBeacon } from '../assets/js/ng-cordova-beacon'
 import { CheckoutController } from './checkout/checkout.controller';
 import { CheckoutCopyController } from './checkout-copy/checkout-copy.controller';
 import { OfferPageController } from './offerpage/offerpage.controller';
-import { ProductController } from './productpage/productpage.controller';
+import { ProductPageController } from './productpage/productpage.controller';
 
 
 angular.module('beacon', ['ionic', 'ngCordovaBeacon','ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ngMaterial', 'toastr'])
@@ -25,4 +25,8 @@ angular.module('beacon', ['ionic', 'ngCordovaBeacon','ngAnimate', 'ngCookies', '
   .service('webDevTec', WebDevTecService)
   .controller('MainController', MainController)
   .directive('acmeNavbar', NavbarDirective)
-  .directive('acmeMalarkey', MalarkeyDirective);
+  .directive('acmeMalarkey', MalarkeyDirective)
+  .controller('CheckoutController', CheckoutController)
+  .controller('CheckoutCopyController', CheckoutCopyController)
+  .controller('OfferPageController', OfferPageController)
+  .controller('ProductPageController', ProductPageController);

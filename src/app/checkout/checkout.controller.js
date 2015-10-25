@@ -16,10 +16,10 @@ export class CheckoutController {
     // this.createBeacon();
     this.runningBeacon = false;
     this.activate($timeout, webDevTec);
-    this.getUUID();
+    // this.getUUID();
     this.beacons = {};
     this.largeResponse = 'we';
-
+    console.log('in checkout');
     $ionicPlatform.ready(function() {
 
         $cordovaBeacon.requestWhenInUseAuthorization();

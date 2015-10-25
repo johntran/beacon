@@ -8,22 +8,28 @@ export function routerConfig ($stateProvider, $urlRouterProvider) {
       controllerAs: 'main'
     })
     .state('product-page', {
-      url: '/',
-      templateUrl: 'app/main/main.html',
-      controller: 'MainController as Main',
-      controllerAs: 'main'
+      url: '/product-page',
+      templateUrl: 'app/productpage/productpage.html',
+      controller: 'ProductPageController as ProductPage',
+      controllerAs: 'productPage'
     })
     .state('checkout', {
-      url: '/',
-      templateUrl: 'app/main/main.html',
-      controller: 'MainController as Main',
-      controllerAs: 'main'
+      url: '/checkout',
+      templateUrl: 'app/checkout/checkout.html',
+      controller: 'CheckoutController as Checkout',
+      controllerAs: 'checkout'
     })
     .state('checkout-copy', {
-      url: '/',
-      templateUrl: 'app/main/main.html',
-      controller: 'MainController as Main',
-      controllerAs: 'main'
+      url: '/checkout-copy',
+      templateUrl: 'app/checkout-copy/checkout-copy.html',
+      controller: 'CheckoutCopyController as CheckoutCopy',
+      controllerAs: 'checkoutCopy'
+    })
+    .state('offer-page', {
+      url: '/offer-page',
+      templateUrl: 'app/offerpage/offerpage.html',
+      controller: 'OfferPageController as OfferPage',
+      controllerAs: 'offerPage'
     });
 
   $urlRouterProvider.otherwise('/');
