@@ -18,7 +18,7 @@ export class MainController {
     this.activate($timeout, webDevTec);
     this.getUUID();
     this.beacons = {};
-    this.responseUU = 'we';
+    this.largeResponse = 'we';
 
     $ionicPlatform.ready(function() {
 
@@ -96,25 +96,24 @@ export class MainController {
       // "Access-Control-Request-Headers": "*",
       "data": form
     };
-    console.log('settingsout',settings);
     $.ajax(settings).done(function (response) {
       console.log('settings', settings);
       console.log(response);
-      this.responseUU = response;
+      this.largeResponse = response;
     });
-    $.ajax(settings).then(successfn, failfn);
-
-    let successfn = (response) =>{
-      console.log('settings', settings);
-      console.log(response);
-      this.responseUU = response;
-
-    };
-    let failfn = (response) =>{
-      console.log('settings', settings);
-      console.log(response);
-      this.responseUU = response;
-
-    };
+    // $.ajax(settings).then(successfn, failfn);
+    //
+    // let successfn = (response) =>{
+    //   console.log('settings', settings);
+    //   console.log(response);
+    //   this.responseUU = response;
+    //
+    // };
+    // let failfn = (response) =>{
+    //   console.log('settings', settings);
+    //   console.log(response);
+    //   this.responseUU = response;
+    //
+    // };
   }
 }
