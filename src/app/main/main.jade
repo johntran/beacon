@@ -1,9 +1,6 @@
 html
   body
-    ion-view(view-title='Dashboard', ng-controller:'main')
-      div(class='bar bar-header bar-assertive')
-        img(src='../assets/images/app-logo.svg', class='app-logo')
-      
+    ion-view(view-title='Dashboard', ng-controller:'main')  
       ion-content(class='main-container')
         div(class='purchase-cue')
           | You posted about StarCraft a few weeks ago. Would you like to buy it today?
@@ -24,8 +21,9 @@ html
             br
             | RATING BAR
           div(class='col')
-            button(class='button button-positive buy-button')
-              | Buy Now
+            a(href='#/checkout')
+              button(class='button button-positive buy-button')
+                | Buy Now
               
         div(class='card')
           div(class='row')

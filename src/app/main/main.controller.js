@@ -4,7 +4,7 @@
 
 
 export class MainController {
-  constructor ($timeout, webDevTec, toastr, $ionicPlatform, $cordovaBeacon) {
+  constructor ($state, $timeout, webDevTec, toastr, $ionicPlatform, $cordovaBeacon) {
     'ngInject';
   //   this.awesomeThings = [];
   //   this.classAnimation = '';
