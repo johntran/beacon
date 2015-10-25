@@ -2,34 +2,25 @@ html
   body
     ion-view(view-title='Dashboard', ng-controller:'main')  
       ion-content(class='main-container')
-        div(class='purchase-cue')
-          | You posted about StarCraft a few weeks ago. Would you like to buy it today?
+        div(class='padding')
+          | You liked StarCraft two weeks ago. Would you like to buy it today?
           
-        div(class='product-image-container')
-          div(class='starcraft-sample')
-          div(class='product-title')
-            | StarCraft II: Wings of Liberty  
-        
-        div(class='row')
-          div(class='col')
-            div(class='product-price')
-              | $19.99
-            div(class='product-stock')
-              | In Stock
-          div(class='col')
-            | Average User Rating
-            br
-            | RATING BAR
-          div(class='col')
-            a(href='#/checkout')
-              button(class='button button-positive buy-button')
-                | Buy Now
-              
         div(class='card')
+          div(class='product-image-container')
+            div(class='starcraft-sample')
+            div(class='product-title')
+              | StarCraft II: Wings of Liberty  
+          
+          div(class='row product-info')
+            div(class='col product-price')
+              | $19.99
+            div(class='col product-stock')
+              | In Stock
+
           div(class='row')
-            div(class='col')
+            div(class='col-40')
               img(src='../assets/images/starcraft.png' class='main-page-like')
-            div(class='col')
+            div(class='col-60 facebook-page-image')
               b 
                 | 2,679,021 people like this
               br
