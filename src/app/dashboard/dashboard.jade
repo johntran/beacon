@@ -22,47 +22,39 @@ html
           p
             | Get notifications every time you pass by a store that has your favorite brands/products
           
-        div(class='card')
+        div(class='card' ng-hide="show1")
           div(class='row')
             div(class='col')
-              img(src='assets/images/example.jpg',  class='product-thumbnail')
+              img(src='http://www.visualanswers.co.uk/medglasses/ray_ban_3025-2.gif',  class='product-thumbnail')
             div(class='col')
               h4.category-title
-                | Games
-            div(class='col')
-              ul(class='list')
-                li(class='item item-toggle')
-                  label(class='toggle toggle-positive')
-                    input(type='checkbox')
-                    div(class='track')
-                      div(class='handle')
+                | Ray Bans Sunglasses
+            div(class='col')    
+              i.icon.ion-checkmark(ng-click="show1 = !show1")
+              i.icon.ion-heart(ng-click="show1 = !show1")
+              i.icon.ion-close(ng-click="show1 = !show1")
               
-        div(class='card')
+        div(class='card' ng-hide="show2")
           div(class='row')
             div(class='col')
-              img(src='assets/images/example.jpg',  class='product-thumbnail')
+              img(src='https://external.flas1-1.fna.fbcdn.net/safe_image.php?d=AQA9Us-pIgT03S28&w=258&h=386&url=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F7%2F73%2FThetippingpoint.jpg&cfs=1&f&fallback=hub_book',  class='product-thumbnail')
             div(class='col')
               h4.category-title
-                | Books
+                | The Tipping Point
             div(class='col')
-              ul(class='list')
-                li(class='item item-toggle')
-                  label(class='toggle toggle-positive')
-                    input(type='checkbox')
-                    div(class='track')
-                      div(class='handle')
-                      
-        div(class='card')
+              i.icon.ion-checkmark(ng-click="show2 = !show2")
+              i.icon.ion-heart(ng-click="show2 = !show2")
+              i.icon.ion-close(ng-click="show2 = !show2")
+              
+        div(class='card', ng-hide='show3')
           div(class='row')
             div(class='col')
-              img(src='assets/images/example.jpg',  class='product-thumbnail')
+              img(src='http://www.staples-3p.com/s7/is/image/Staples/s0856970_sc7?$std$&wid=208&hei=146',  class='product-thumbnail')
             div(class='col')
               h4.category-title
-                | Clothes
-            div(class='col')
-              ul(class='list')
-                li(class='item item-toggle')
-                  label(class='toggle toggle-positive')
-                    input(type='checkbox')
-                    div(class='track')
-                      div(class='handle')
+                | Burlston Luxura Managers Chair
+            div(class='col')    
+              i.icon.ion-checkmark(ng-click="show3 = !show3")
+              i.icon.ion-heart(ng-click="show3 = !show3")
+              i.icon.ion-close(ng-click="show3 = !show3")
+              
