@@ -134,10 +134,7 @@ ion-content {
 .product-price {
   font-weight: bold;
   font-size: 30px;
-}
-
-.product-info {
-  margin: 10px;
+  margin-top: 15px;
 }
 
 .product-stock {
@@ -197,6 +194,22 @@ ion-content {
   margin: 0 auto;
   display: block;
   width: 315px;
+}
+
+.barcode {
+  background-image: url('https://worldbarcodes.com/wp-content/uploads/39123439-code39.gif');
+  background-size: cover;
+  background-position-x: 50%;
+  height: 75px;
+  margin: 10px;
+}
+
+.u-textcenter {
+  text-align: center;
+}
+
+.payment {
+  margin: 0px;
 }
 
 /**
