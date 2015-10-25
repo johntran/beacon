@@ -4,19 +4,17 @@
 
 
 export class MainController {
-  constructor ($state, $timeout, webDevTec, toastr, $ionicPlatform, $cordovaBeacon, $ionicModal) {
+  constructor ($state, $timeout, webDevTec, toastr, $ionicPlatform, $cordovaBeacon, $ionicModal, $rootScope) {
     'ngInject';
 
     $ionicModal.fromTemplateUrl('app/main/modal.html', {
       scope: this,
       animation: 'slide-in-up'
     }).then(function(modal) {
-      this.modal = modal
-      console.log('promised')
+      this.modal = modal;
     });
 
     this.openModal = function() {
-      console.log('define modal');
       this.modal.show()
     };
 
