@@ -21,12 +21,12 @@ html
         div(ng-show="showBarcode")
           h3(class='u-textcenter')
             | Scan below to purchase
-        div(class='card barcode' ng-show="showBarcode")
+        div(ng-show="showBarcode")  
+          div(class='card barcode' ng-click="this.openModal()")
         
         a(ng-hide="showBarcode")
           button(class='button button-positive buy-button' ng-click="showBarcode = !showBarcode")
             | Buy Now
-            | {{ showBarcode }}
         
         div(class='card' ng-hide='showBarcode')
           div(class='row')

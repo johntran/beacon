@@ -218,6 +218,16 @@ ion-content {
   width: 100%;
 }
 
+.product-thumbnail {
+  max-height: 80px;
+  max-width: 80px;
+}
+
+.item-toggle {
+  height: 50px;
+  margin-top: 5px;
+}
+
 /**
  *  Do not remove the comment below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

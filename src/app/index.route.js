@@ -7,6 +7,12 @@ export function routerConfig ($stateProvider, $urlRouterProvider) {
       controller: 'MainController as Main',
       controllerAs: 'main'
     })
+    .state('modal', {
+      url: '/modal',
+      templateUrl: 'app/main/modal.html',
+      controller: 'MainController as Main',
+      controllerAs: 'main'
+    })
     .state('product-page', {
       url: '/product-page',
       templateUrl: 'app/productpage/productpage.html',

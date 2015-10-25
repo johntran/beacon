@@ -1,16 +1,67 @@
 html
   body
-    ion-view(view-title='Dashboard', ng-controller:'main')
-      div(class='bar bar-header bar-assertive')
-        img(src='../assets/images/app-logo.svg', class='app-logo')
-      
+    ion-view(view-title='Dashboard', ng-controller:'main')      
       ion-content(class='main-container')  
-        img(class='merchant' src='../assets/images/vendor.png')
-        
-        div(class='row product-line-item')
-          img(class='col-20 padding-horizontal  product-checkout-image' src='../assets/images/example.jpg')
+        h3.padding
+          | Recent Purchases
           
-          div(class='col-60 padding-horizontal product-line-title')
-            | StarCraft II: Wings of Liberty  
-          div(class='col-20 padding-horizontal product-line-price')
-            | $19.99
+        div(class='card')
+          div(class='row')
+            div(class='col')
+              img(src='assets/images/example.jpg',  class='product-thumbnail')
+            div(class='col')
+              | StarCraft II: Wings of Liberty
+            div(class='col')
+              | 10/25/15
+        
+        .padding
+          h3
+            | Item Category Suggestions
+            
+          p
+            | Get notifications every time you pass by a store that has your favorite brands/products
+          
+        div(class='card')
+          div(class='row')
+            div(class='col')
+              img(src='assets/images/example.jpg',  class='product-thumbnail')
+            div(class='col')
+              h4
+                | Games
+            div(class='col')
+              ul(class='list')
+                li(class='item item-toggle')
+                  label(class='toggle toggle-positive')
+                    input(type='checkbox')
+                    div(class='track')
+                      div(class='handle')
+              
+        div(class='card')
+          div(class='row')
+            div(class='col')
+              img(src='assets/images/example.jpg',  class='product-thumbnail')
+            div(class='col')
+              h4
+                | Books
+            div(class='col')
+              ul(class='list')
+                li(class='item item-toggle')
+                  label(class='toggle toggle-positive')
+                    input(type='checkbox')
+                    div(class='track')
+                      div(class='handle')
+                      
+        div(class='card')
+          div(class='row')
+            div(class='col')
+              img(src='assets/images/example.jpg',  class='product-thumbnail')
+            div(class='col')
+              h4
+                | Clothes
+            div(class='col')
+              ul(class='list')
+                li(class='item item-toggle')
+                  label(class='toggle toggle-positive')
+                    input(type='checkbox')
+                    div(class='track')
+                      div(class='handle')
