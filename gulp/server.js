@@ -3,7 +3,7 @@
 var path = require('path');
 var gulp = require('gulp');
 var conf = require('./conf');
-
+var cors = require('cors');
 var browserSync = require('browser-sync');
 var browserSyncSpa = require('browser-sync-spa');
 
@@ -33,7 +33,7 @@ function browserSyncInit(baseDir, browser) {
    *
    * For more details and option, https://github.com/chimurai/http-proxy-middleware/blob/v0.0.5/README.md
    */
-  // server.middleware = proxyMiddleware('/users', {target: 'http://jsonplaceholder.typicode.com', proxyHost: 'jsonplaceholder.typicode.com'});
+  server.middleware = proxyMiddleware('/api', {target: 'https://services.sbx.getmo.do/beacon_service/index.php?r=beacon_v1%2Fquery_zone', proxyHost: 'services.sbx.getmo.do'});
 
   browserSync.instance = browserSync.init({
     startPath: '/',

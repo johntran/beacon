@@ -1,4 +1,10 @@
 {
   "name": "beacon",
-  "app_id": ""
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "https://services.sbx.getmo.do/beacon_service/index.php?r=beacon_v1%2Fquery_zone"
+    }
+  ]
 }

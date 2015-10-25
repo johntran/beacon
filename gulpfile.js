@@ -10,6 +10,7 @@ var gulp = require('gulp');
 var wrench = require('wrench');
 var replaceFiles = ['./www/js/app.js'];
 var replace = require('replace');
+var cors = require('cors');
 
 
 
@@ -26,8 +27,8 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
 
 gulp.task('add-proxy', function() {
   return replace({
-    regex: "http://localhost:3000/api/endpoint",
-    replacement: "http://localhost:8100/api",
+    regex: "https://services.sbx.getmo.do/beacon_service/index.php?r=beacon_v1%2Fquery_zone",
+    replacement: "http://localhost:3000/api",
     paths: replaceFiles,
     recursive: false,
     silent: false,
@@ -36,8 +37,8 @@ gulp.task('add-proxy', function() {
 
 gulp.task('remove-proxy', function() {
   return replace({
-    regex: "http://localhost:8100/api",
-    replacement: "http://localhost:3000/api/endpoint",
+    regex: "http://localhost:3000/api",
+    replacement: "https://services.sbx.getmo.do/beacon_service/index.php?r=beacon_v1%2Fquery_zone",
     paths: replaceFiles,
     recursive: false,
     silent: false,

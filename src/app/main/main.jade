@@ -1,6 +1,6 @@
 html
   body
-    ion-view(view-title='Dashboard', style='width: 50%;')
+    ion-view(view-title='Dashboard', style='width: 50%;', ng-controller:'Main')
       ion-content.padding
         .list.card
           .item.item-divider Recent Updates
@@ -10,9 +10,10 @@ html
               b sector 3
         .list.card
           .item.item-divider Health
-          .item.item-body
+          .item.item-body {{Main.runningBeacon}} {{Main.responseUU}}
             div
-              | You ate an apple today!
+              | You ate an apple today jsjs! 
+              
         .list.card
           .item.item-divider Upcoming
           .item.item-body
