@@ -157,6 +157,43 @@ ion-content {
   font-weight: bold;
 }
 
+.merchant {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.product-line-item {
+  background-color: rgba(0,0,0,.5);
+  margin:  20px -20px;
+  width: 100vw;
+  color: white;
+}
+
+.product-checkout-image {
+  height: 50px;
+  width: auto;
+}
+
+.product-line-title, .product-line-price {
+  font-size: 16px;
+}
+
+.payment-method {
+  font-size: 14px;
+}
+
+.payment-methods-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.checkout-button {
+  margin: 0 auto;
+  display: block;
+  width: 315px;
+}
+
 /**
  *  Do not remove the comment below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
