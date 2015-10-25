@@ -21,8 +21,9 @@ html
         div(ng-show="showBarcode")
           h3(class='u-textcenter')
             | Scan below to purchase
-        div(ng-show="showBarcode")  
-          div(class='card barcode' ng-click="this.openModal()")
+        div(ng-show="showBarcode")
+          a(href='#/dashboard')
+            div(class='card barcode')
         
         a(ng-hide="showBarcode")
           button(class='button button-positive buy-button' ng-click="showBarcode = !showBarcode")
