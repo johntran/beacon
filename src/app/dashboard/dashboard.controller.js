@@ -4,7 +4,7 @@
 
 
 export class DashboardController {
-  constructor ($timeout, webDevTec, toastr, $ionicPlatform, $cordovaBeacon) {
+  constructor ($timeout, webDevTec, toastr, $ionicPlatform, $cordovaBeacon, $ionicUser, $ionicPush, $rootScope) {
     'ngInject';
     this.awesomeThings = [];
     this.classAnimation = '';
@@ -20,23 +20,75 @@ export class DashboardController {
     this.beacons = {};
     this.largeResponse = 'we';
     console.log('in dashboard');
-    $ionicPlatform.ready(function() {
+    // $ionicPlatform.ready(function() {
+    //
+    //     $cordovaBeacon.requestWhenInUseAuthorization();
+    //
+    //     $rootScope.$on("$cordovaBeacon:didRangeBeaconsInRegion", function(event, pluginResult) {
+    //         var uniqueBeaconKey;
+    //         for(var i = 0; i < pluginResult.beacons.length; i++) {
+    //             uniqueBeaconKey = pluginResult.beacons[i].uuid + ":" + pluginResult.beacons[i].major + ":" + pluginResult.beacons[i].minor;
+    //             $scope.beacons[uniqueBeaconKey] = pluginResult.beacons[i];
+    //         }
+    //         $scope.$apply();
+    //     });
+    //
+    //     $cordovaBeacon.startRangingBeaconsInRegion($cordovaBeacon.createBeaconRegion("estimote", "b9407f30-f5f8-466e-aff9-25556b57fe6d"));
+    //
+    // });
+//
+//     $rootScope.$on('$cordovaPush:tokenReceived', function(event, data) {
+//   alert("Successfully registered token " + data.token);
+//   console.log('Ionic Push: Got token ', data.token, data.platform);
+//   $scope.token = data.token;
+// });
+//
+// $scope.identifyUser = function() {
+//  var user = $ionicUser.get();
+//  if(!user.user_id) {
+//  // Set your user_id here, or generate a random one.
+//  user.user_id = $ionicUser.generateGUID();
+//  };
+//
+//  // Metadata
+//  angular.extend(user, {
+//  name: 'Simon',
+//  bio: 'Author of Devdactic'
+//  });
+//
+//  // Identify your user with the Ionic User Service
+//  $ionicUser.identify(user).then(function(){
+//  $scope.identified = true;
+//  console.log('Identified user ' + user.name + '\n ID ' + user.user_id);
+//  });
+// };
+//
+// $scope.pushRegister = function() {
+//  console.log('Ionic Push: Registering user');
+//
+//  // Register with the Ionic Push service.  All parameters are optional.
+//  $ionicPush.register({
+//    canShowAlert: true, //Can pushes show an alert on your screen?
+//    canSetBadge: true, //Can pushes update app icon badges?
+//    canPlaySound: true, //Can notifications play a sound?
+//    canRunActionsOnWake: true, //Can run actions outside the app,
+//    onNotification: function(notification) {
+//      // Handle new push notifications here
+//      return true;
+//    }
+//  });
+// };
+//
+// $rootScope.$on('$cordovaPush:tokenReceived', function(event, data) {
+//   alert("Successfully registered token " + data.token);
+//   console.log('Ionic Push: Got token ', data.token, data.platform);
+//   $scope.token = data.token;
+// });
 
-        $cordovaBeacon.requestWhenInUseAuthorization();
-
-        $rootScope.$on("$cordovaBeacon:didRangeBeaconsInRegion", function(event, pluginResult) {
-            var uniqueBeaconKey;
-            for(var i = 0; i < pluginResult.beacons.length; i++) {
-                uniqueBeaconKey = pluginResult.beacons[i].uuid + ":" + pluginResult.beacons[i].major + ":" + pluginResult.beacons[i].minor;
-                $scope.beacons[uniqueBeaconKey] = pluginResult.beacons[i];
-            }
-            $scope.$apply();
-        });
-
-        $cordovaBeacon.startRangingBeaconsInRegion($cordovaBeacon.createBeaconRegion("estimote", "b9407f30-f5f8-466e-aff9-25556b57fe6d"));
-
-    });
   }
+
+
+
 
   createBeacon() {
 

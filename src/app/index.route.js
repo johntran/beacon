@@ -3,13 +3,19 @@ export function routerConfig ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'app/main/main.html',
-      controller: 'MainController as Main',
-      controllerAs: 'main'
+      templateUrl: 'app/signin/signin.html',
+      controller: 'SignInController as SignIn',
+      controllerAs: 'signinPage'
     })
+    // .state('home', {
+    //   url: '/',
+    //   templateUrl: 'app/main/main.html',
+    //   controller: 'MainController as Main',
+    //   controllerAs: 'main'
+    // })
     .state('modal', {
       url: '/modal',
-      templateUrl: 'app/main/modal.html',
+      templateUrl: 'app/main/main.html',
       controller: 'MainController as Main',
       controllerAs: 'main'
     })

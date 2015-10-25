@@ -4,7 +4,7 @@
 
 
 export class MainController {
-  constructor ($state, $timeout, webDevTec, toastr, $ionicPlatform, $cordovaBeacon, $ionicModal, $rootScope) {
+  constructor ($state, $timeout, webDevTec, toastr, $ionicPlatform, $cordovaBeacon, $ionicModal, $rootScope, $http, $scope) {
     'ngInject';
 
     $ionicModal.fromTemplateUrl('app/main/modal.html', {
@@ -18,6 +18,7 @@ export class MainController {
       this.modal.show()
     };
 
+
     this.closeModal = function() {
       this.modal.hide();
     };
@@ -25,6 +26,17 @@ export class MainController {
     // this.$on('$destroy', function() {
     //   this.modal.remove();
     // });
+
+    $scope.rest = function() {
+      $http({
+        method: 'POST',
+        url: 'http://localhost:3000/api/users?name=john&phone=7146228644'
+        }).then(function successCallback(response) {
+          console.log('success!');
+        }, function errorCallback(response) {
+          console.log('fail!');
+        });
+    };
 
    this.getUUID = function() {
    var settings = {
