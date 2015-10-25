@@ -11,10 +11,12 @@ import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive
 import { ngCordovaBeacon } from '../assets/js/ng-cordova-beacon'
 import { DashboardController } from './dashboard/dashboard.controller';
 import { OfferPageController } from './offerpage/offerpage.controller';
+import { SignInController } from './signin/signin.controller';
 import { ProductPageController } from './productpage/productpage.controller';
 
 
-angular.module('beacon', ['ionic', 'ngCordovaBeacon','ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ngMaterial', 'toastr'])
+angular.module('beacon', ['ionic', 'ngCordovaBeacon', 'ngCordova','ionic.service.core',
+  'ionic.service.push', 'ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ngMaterial', 'toastr'])
   .constant('malarkey', malarkey)
   .constant('moment', moment)
   .config(config)
@@ -27,4 +29,12 @@ angular.module('beacon', ['ionic', 'ngCordovaBeacon','ngAnimate', 'ngCookies', '
   .directive('acmeMalarkey', MalarkeyDirective)
   .controller('DashboardController', DashboardController)
   .controller('OfferPageController', OfferPageController)
-  .controller('ProductPageController', ProductPageController);
+  .controller('SignInController', SignInController)
+  .controller('ProductPageController', ProductPageController)
+  .config(['$ionicAppProvider', function($ionicAppProvider) {
+  $ionicAppProvider.identify({
+    app_id: 'a821b9b22fc4ac7bd71677308aa39247fac54c316b602308',
+    api_key: '05a027317c231363649389c1007219a4c7899ad255037f6c',
+    dev_push: true
+  });
+}]);

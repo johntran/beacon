@@ -59,6 +59,8 @@
 		F7EE7FDF975647C985AA0FD7 /* UIApplication+APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351657317074624A6E50CC4 /* UIApplication+APPLocalNotification.m */; };
 		165FBEA3FD8F4947BD03212C /* UILocalNotification+APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE8A99599CC4CB88C395087 /* UILocalNotification+APPLocalNotification.m */; };
 		1AA037321A6546179B0CB51F /* CDVBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C33331A85184B1EBE59DB16 /* CDVBattery.m */; };
+		D9F3CD0363A24EA0846776C9 /* AppDelegate+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5806FF018348FF90E6BB38 /* AppDelegate+notification.m */; };
+		F4220AABB564432C9F8ADB77 /* PushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 37704FEE00DC42DF94DF5026 /* PushPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +161,10 @@
 		AB0AB549FD594C7F9A485631 /* UILocalNotification+APPLocalNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UILocalNotification+APPLocalNotification.h"; path = "de.appplant.cordova.plugin.local-notification/UILocalNotification+APPLocalNotification.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		6C33331A85184B1EBE59DB16 /* CDVBattery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVBattery.m"; path = "cordova-plugin-battery-status/CDVBattery.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		A74A926D5F2B403E8E8FD4AA /* CDVBattery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVBattery.h"; path = "cordova-plugin-battery-status/CDVBattery.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		CA5806FF018348FF90E6BB38 /* AppDelegate+notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+notification.m"; path = "com.phonegap.plugins.PushPlugin/AppDelegate+notification.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		37704FEE00DC42DF94DF5026 /* PushPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "PushPlugin.m"; path = "com.phonegap.plugins.PushPlugin/PushPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		D7C9B1C6A2B84BC4B071EA62 /* AppDelegate+notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+notification.h"; path = "com.phonegap.plugins.PushPlugin/AppDelegate+notification.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		E13B7B50F5E248D7B5110C5E /* PushPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PushPlugin.h"; path = "com.phonegap.plugins.PushPlugin/PushPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +302,10 @@
 				AB0AB549FD594C7F9A485631 /* UILocalNotification+APPLocalNotification.h */,
 				6C33331A85184B1EBE59DB16 /* CDVBattery.m */,
 				A74A926D5F2B403E8E8FD4AA /* CDVBattery.h */,
+				CA5806FF018348FF90E6BB38 /* AppDelegate+notification.m */,
+				37704FEE00DC42DF94DF5026 /* PushPlugin.m */,
+				D7C9B1C6A2B84BC4B071EA62 /* AppDelegate+notification.h */,
+				E13B7B50F5E248D7B5110C5E /* PushPlugin.h */,
 			);
 			name = Plugins;
 			path = "beacon/Plugins";
@@ -498,6 +508,8 @@
 				F7EE7FDF975647C985AA0FD7 /* UIApplication+APPLocalNotification.m in Sources */,
 				165FBEA3FD8F4947BD03212C /* UILocalNotification+APPLocalNotification.m in Sources */,
 				1AA037321A6546179B0CB51F /* CDVBattery.m in Sources */,
+				D9F3CD0363A24EA0846776C9 /* AppDelegate+notification.m in Sources */,
+				F4220AABB564432C9F8ADB77 /* PushPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

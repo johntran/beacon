@@ -4,6 +4,7 @@
   "dependencies": {
     "cordova": "^5.3.3",
     "gulp-haml": "^0.1.6",
+    "ionic-service-core": "^0.1.10",
     "replace": "^0.3.0"
   },
   "scripts": {

@@ -115,6 +115,13 @@ module.exports = [
         "clobbers": [
             "navigator.battery"
         ]
+    },
+    {
+        "file": "plugins/com.phonegap.plugins.PushPlugin/www/PushNotification.js",
+        "id": "com.phonegap.plugins.PushPlugin.PushNotification",
+        "clobbers": [
+            "PushNotification"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -129,6 +136,7 @@ module.exports.metadata =
     "com.unarin.cordova.beacon": "3.3.0",
     "de.appplant.cordova.plugin.local-notification": "0.8.2-dev",
     "cordova-plugin-battery-status": "1.1.0",
+    "com.phonegap.plugins.PushPlugin": "2.5.0",
     "de.appplant.cordova.common.registerusernotificationsettings": "1.0.1"
 }
 // BOTTOM OF METADATA
