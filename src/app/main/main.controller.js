@@ -25,5 +25,24 @@ export class MainController {
     // this.$on('$destroy', function() {
     //   this.modal.remove();
     // });
-  }
+
+   this.getUUID = function() {
+   var settings = {
+     "async": true,
+     "crossDomain": true,
+     "url": "http://localhost:3000/api/users?name=john&phone=7146228644",
+     "method": "POST",
+     "headers": {
+       "cache-control": "no-cache",
+     },
+     "processData": false,
+     "contentType": false,
+     "data": form
+   };
+
+   $.ajax(settings).done(function (response) {
+    console.log('successful!');
+   });
+ };
+}
 }
